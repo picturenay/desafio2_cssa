@@ -1,0 +1,93 @@
+header{
+    grid-area:cabecera;
+    text-align: center;
+}
+aside{
+    grid-area: ladoizq;
+    display: flex;
+    flex-direction: column;
+}
+.card1{
+display: flex;
+   margin-left: 10%;   
+}
+
+.card2{
+display: flex;
+    color:gray;
+    margin-left: 10%;
+    margin-bottom: 4%;
+}
+.contador{
+    color: lightgray;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+main{
+    background-color: gray;
+    grid-area: principal;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
+
+.descripcion{
+    margin: 1%;
+}
+
+.precio{
+    font-weight: bold;
+    margin: 1%;
+}
+
+.boton {
+    background-color: #28a745; 
+    color: white;
+    border: none; 
+    
+    padding: 10px; 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+
+
+
+
+
+footer{
+    grid-area:pie;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+}
+.box{
+    border: 2px solid;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+'cabecera cabecera' /*repetir sección para que ocupe todas las columnas */
+'ladoizq principal'
+'pie pie';
+grid-template-columns: 1fr 10fr;
+}
